@@ -109,7 +109,7 @@ Once you've checked that everything works as expected, perform the following tas
 4. Add a new HTML file called `index.html` to the `public` folder (its contents can be anything you like). Now, browse to [http://localhost:3000/](http://localhost:3000/). What is displayed, and why? Comment your answer here:
 
 ```
-Your answer here.
+The root page uses the index.html file rather than the .send() method in the server-side code.
 ```
 
 ## Exercise Three &ndash; Serving up JSON
