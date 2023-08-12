@@ -13,6 +13,17 @@ window.addEventListener("load", function () {
     function displayPerson(person) {
         document.querySelector("#person-name").innerHTML = person.name;
         document.querySelector("#person-address").innerHTML = person.address;
+        document.querySelector("#person-phone_number").innerHTML = person.phone_number;
     }
 
+    document.querySelector("#generate-random").addEventListener("click", async function() {
+        
+        fetchRandomNumber();
+        
+        async function fetchRandomNumber() {
+            const response = await fetch("./randomNumber");
+            const json = await response.json();
+            document.querySelector("#random-number").innerHTML = json.number;
+        }
+    })
 });
