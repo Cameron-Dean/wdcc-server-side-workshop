@@ -17,6 +17,8 @@
         <input type="text" name="name" id="txtName"><br>
         <label for="txtAddress">Address:</label><br>
         <input type="text" name="address" id="txtAddress"><br>
+        <label for="txtEmail">Email:</label><br>
+        <input type="email" name="email" id="txtEmail"><br>
         <button type="submit">Submit!</button>
     </form>
 
@@ -26,11 +28,13 @@
         <input type="text" name="name" id="txtName2"><br>
         <label for="txtAddress2">Address:</label><br>
         <input type="text" name="address" id="txtAddress2"><br>
+        <label for="txtDate">Date of birth:</label><br>
+        <input type="date" name="date" id="txtDate"><br>
         <button type="submit">Submit!</button>
     </form>
 
     <h1>A form with multiple fields with the same name</h1>
-    <form action="./processThirdForm" method="GET">
+    <form action="./processThirdForm" method="POST">
         <p>Select your favorite color(s):</p>
         <input type="checkbox" name="color" value="red" id="chkColorRed"><label for="chkColorRed">Red</label>
         <input type="checkbox" name="color" value="green" id="chkColorGreen"><label for="chkColorGreen">Green</label>
